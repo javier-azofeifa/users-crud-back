@@ -13,11 +13,12 @@ app.use(express.json());
 app.use(helmet({
     crossOriginResourcePolicy: false,
 }));
+
 app.use(cors());
 
 app.use(router);
 app.get('/', (req, res) => {
-    return res.send("Welcome to express!");
+    return res.send("Welcome Javier V!");
 })
 
 // middlewares después de las rutas
